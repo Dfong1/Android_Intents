@@ -50,7 +50,7 @@
             android:id="@+id/ButtonDos"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:text="Boton 2"
+            android:text="Abrir SIIA"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="@+id/LinearUno"
             app:layout_constraintEnd_toEndOf="@+id/LinearUno"

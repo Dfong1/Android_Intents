@@ -23,6 +23,7 @@ public class MainActivity2 extends AppCompatActivity{
         Correo = findViewById(R.id.ButtonTres);
         Telefono =  findViewById(R.id.telefono);
         B1 = (Button) findViewById(R.id.ButtonUno);
+        B2 = findViewById(R.id.ButtonDos);
 
         View.OnClickListener mainTres = new View.OnClickListener() {
             @Override
@@ -51,9 +52,18 @@ public class MainActivity2 extends AppCompatActivity{
             }
         };
 
+        View.OnClickListener mainSiia = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("uttorreon.mx"));
+                startActivity(i);
+            }
+        };
+
         Correo.setOnClickListener(mainCorreo);
         Telefono.setOnClickListener(mainTelefono);
         B1.setOnClickListener(mainTres);
+        B2.setOnClickListener(mainSiia);
     }
 
 
